@@ -91,15 +91,15 @@ function createChart(labels, balances) {
             datasets: [{
                 label: 'Growth',
                 data: balances,
-                borderColor: 'rgb(50, 200, 0)',
-                backgroundColor: 'rgba(50, 200, 0, .3)',
+                borderColor: 'rgb(44, 140, 220)',
+                backgroundColor: 'rgba(44, 140, 220, .3)',
                 borderWidth: 2,
                 pointRadius: 4,
                 hoverRadius: 4,
                 hoverBorderWidth: 2,
                 hitRadius: 2,
                 pointStyle: 'circle',
-                pointBackgroundColor: 'rgb(50, 200, 0)'
+                pointBackgroundColor: 'rgb(44, 140, 220)'
             },],
         },
         options: {
@@ -110,14 +110,14 @@ function createChart(labels, balances) {
                 yAxes: [{
                     ticks: {
                         beginAtZero: false,
-                        fontColor: 'rgb(50, 200, 0)',
+                        fontColor: 'rgb(44, 140, 220)',
                         beginAtZero: true
                     },
                 },],
                 xAxes: [{
                     ticks: {
                         beginAtZero: false,
-                        fontColor: 'rgb(50, 200, 0)',
+                        fontColor: 'rgb(44, 140, 220)',
 
                     },
                 },],
