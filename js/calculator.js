@@ -17,8 +17,11 @@ function calculate(e) {
     const expectedReturn = parseInt(document.querySelector('#expectedReturn').value) / 100
     const monthlyDeposit = parseInt(document.querySelector('#monthlyDeposit').value)
     const duration = parseInt(document.querySelector('#duration').value)
-    const monthlyReturn = expectedReturn / 12
+    //const monthlyReturn = expectedReturn / 12
 
+    const monthlyReturn = Math.pow(1 + expectedReturn, 1/12) - 1;
+
+    
     if (!startingBalance || !expectedReturn || !monthlyDeposit || !duration) {
         return
     }
